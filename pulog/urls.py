@@ -5,5 +5,5 @@ from score.views import index
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^(?P<teams>[\w-]{2,2})/$', index)
+    url(r'^(?P<teams>[\w-]{2,2})/$', index.as_view())
 ]

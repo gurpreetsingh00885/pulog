@@ -1,0 +1,83 @@
+<style>
+body {
+   transform: scale(4.0);
+   transform-origin: 0 0;
+   // add prefixed versions too.
+}
+</style>
+<body>
+	<form method = post action = "">{% csrf_token %}
+	<table cellpaddinf ='8' border>
+		<tr>
+			<td>
+	<table cellpadding='8' border>
+		<tr>
+			<td colspan=2 align='center'>
+				{{ team_1 }}
+			</td>
+		</tr>
+		<tr align='center'>
+			<td>
+				<input type='submit' value = '+' name='add_team_1'>
+			</td>
+			<td>
+				<input type='submit' value = '+' name='add_team_1_loss'>
+			</td>
+		</tr>
+		<tr align='center'>
+			<td>
+				Wins : {{ team_1_wins }}
+			</td>
+			<td>
+				Losses : {{ team_1_losses }}
+			</td>
+		</tr>
+		<tr align='center'>
+			<td>
+				<input type='submit' value = '-' name='sub_team_1'>
+			</td>
+			<td>
+				<input type='submit' value = '-' name='sub_team_1_loss'>
+			</td>
+		</tr>
+	</table>
+	</td></tr>
+	<tr><td>
+	<table cellpadding='8' border>
+		<tr>
+			<td colspan=2 align='center'>
+				{{ team_2 }}
+			</td>
+		</tr>
+		<tr align='center'>
+			<td>
+				<input type='submit' value = '+' name='add_team_2'>
+			</td>
+			<td>
+				<input type='submit' value = '+' name='add_team_2_loss'>
+			</td>
+		</tr>
+		<tr align='center'>
+			<td>
+				Wins : {{ team_2_wins }}
+			</td>
+			<td>
+				Losses : {{ team_2_losses }}
+			</td>
+		</tr>
+		<tr align='center'>
+			<td>
+				<input type='submit' value = '-' name='sub_team_2'>
+			</td>
+			<td>
+				<input type='submit' value = '-' name='sub_team_2_loss'>
+			</td>
+		</tr>
+
+	</table>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
